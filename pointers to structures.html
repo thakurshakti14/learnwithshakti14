@@ -1,0 +1,51 @@
+<h3>C++ Pointers to Structure</h3>
+In this article, you'll find relevant examples that will help you to work with pointers to access data within a structure.<br>
+
+A pointer variable can be created not only for native types like (int, float, double etc.) but they can also be created for user defined types like structure.<br>
+
+If you do not know what pointers are, visit C++ pointers.<br>
+
+Here is how you can create pointer for structures:<br>
+
+<b>#include <iostream><br>
+using namespace std;<br>
+
+struct temp {<br>
+    int i;<br>
+    float f;<br>
+};<br>
+
+int main() {<br>
+    temp *ptr;<br>
+    return 0;<br>
+}<br>
+This program creates a pointer ptr of type structure temp.</b><br>
+<h3>Example: Pointers to Structure</h3>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+struct Distance {<br>
+    int feet;<br>
+    float inch;<br>
+};<br>
+
+int main() {<br>
+    Distance *ptr, d;<br>
+
+    ptr = &d;<br>
+    
+    cout << "Enter feet: ";<br>
+    cin >> (*ptr).feet;<br>
+    cout << "Enter inch: ";<br>
+    cin >> (*ptr).inch;<br>
+ 
+    cout << "Displaying information." << endl;<br>
+    cout << "Distance = " << (*ptr).feet << " feet " << (*ptr).inch << " inches";<br>
+
+    return 0;<br>
+}<br>
+Output:<br>
+<li>Enter feet: 4<br>
+<li>Enter inch: 3.5<br>
+<li>Displaying information.<br>
+<li>Distance = 4 feet 3.5 inches<br>

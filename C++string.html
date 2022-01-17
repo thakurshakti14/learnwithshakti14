@@ -1,0 +1,82 @@
+<h3>C++ Strings</h3>
+In this tutorial, you'll learn to handle strings in C++. You'll learn to declare them, initialize them and use them for various input/output operations.<br>
+
+String is a collection of characters. There are two types of strings commonly used in C++ programming language:<br>
+
+Strings that are objects of string class (The Standard C++ Library string class)<br>
+<li>C-strings (C-style Strings)<br>
+<li>C-strings<br>
+In C programming, the collection of characters is stored in the form of arrays. This is also supported in C++ programming. Hence it's called C-strings.<br>
+
+C-strings are arrays of type char terminated with null character, that is, \0 (ASCII value of null character is 0).<br>
+
+<u>How to define a C-string?</u><br>
+<b>char str[] = "C++";<br></b>
+In the above code, str is a string and it holds 4 characters.<br>
+
+Although, "C++" has 3 character, the null character \0 is added to the end of the string automatically.<br>
+
+Alternative ways of defining a string<br>
+<li>char str[4] = "C++";<br>
+     
+<li>char str[] = {'C','+','+','\0'};<br>
+
+<li>char str[4] = {'C','+','+','\0'};<br>
+Like arrays, it is not necessary to use all the space allocated for the string. For example:<br>
+
+<li>char str[100] = "C++";<br>
+<h3>Example 1: C++ String to read a word</h3>
+C++ program to display a string entered by user.<br>
+
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main()<br>
+{<br>
+    char str[100];<br>
+
+    cout << "Enter a string: ";<br>
+    cin >> str;<br>
+    cout << "You entered: " << str << endl;<br>
+
+    cout << "\nEnter another string: ";<br>
+    cin >> str;<br>
+    cout << "You entered: "<<str<<endl;<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Enter a string: C++<br>
+<li>You entered: C++<br>
+
+<li>Enter another string: Programming is fun.<br>
+<li>You entered: Programming<br>
+<i>Notice that, in the second example only "Programming" is displayed instead of "Programming is fun".<br>
+
+This is because the extraction operator >> works as scanf() in C and considers a space " " has a terminating character.<br></i></b>
+<h3>string Object</h3>
+In C++, you can also create a string object for holding strings.<br>
+
+Unlike using char arrays, string objects has no fixed length, and can be extended as per your requirement.<br>
+<h3>Example 3: C++ string using string data type</h3>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main()<br>
+{<br>
+    // Declaring a string object<br>
+    string str;<br>
+    cout << "Enter a string: ";<br>
+    getline(cin, str);<br>
+
+    cout << "You entered: " << str << endl;<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Enter a string: Programming is fun.<br>
+<li>You entered: Programming is fun.<br></b>
+
+
+

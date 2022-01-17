@@ -1,0 +1,115 @@
+<h3>C++ for Loop</h3>
+In this tutorial, we will learn about the C++ for loop and its working .<br>
+
+In computer programming, loops are used to repeat a block of code.<br>
+
+For example, let's say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.<br>
+
+That was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.<br>
+
+<b>There are 3 types of loops in C++.<br>
+
+<li>for loop<br>
+<li>while loop<br>
+<li>do...while loop<br>
+This tutorial focuses on C++ for loop. We will learn about the other type of loops in the upcoming tutorials.</b><br>
+
+<h3>C++ for loop</h3>
+<b>The syntax of for-loop is:<br>
+
+for (initialization; condition; update) {<br>
+    // body of-loop <br>
+}<br></b>
+Here,<br>
+
+initialization - initializes variables and is executed only once<br>
+condition - if true, the body of for loop is executed<br>
+if false, the for loop is terminated<br>
+
+
+<h3>Flowchart of for Loop in C++</h3>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-for-loop-flowchart.png"width="500">
+C++ for loop flowchart<br>
+
+<h3>Example 1: Printing Numbers From 1 to 5</3>
+<b>#include <iostream><br>
+
+using namespace std;<br>
+
+int main() {<br>
+        for (int i = 1; i <= 5; ++i) {<br>
+        cout << i << " ";<br>
+    }<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+1 2 3 4 5<br>
+Here is how this program works<br>
+
+Iteration	Variable	i <= 5	Action<br>
+1st	i = 1	true	1 is printed. i is increased to 2.<br>
+2nd	i = 2	true	2 is printed. i is increased to 3.<br>
+3rd	i = 3	true	3 is printed. i is increased to 4.<br>
+4th	i = 4	true	4 is printed. i is increased to 5.<br>
+5th	i = 5	true	5 is printed. i is increased to 6.<br>
+6th	i = 6	false	The loop is terminated<br>
+
+
+Iteration	Variable	i <= 5	Action<br>
+1st	i = 1	true	Hello World! is printed and i is increased to 2.<br>
+2nd	i = 2	true	Hello World! is printed and i is increased to 3.<br>
+3rd	i = 3	true	Hello World! is printed and i is increased to 4.<br>
+4th	i = 4	true	Hello World! is printed and i is increased to 5.<br>
+5th	i = 5	true	Hello World! is printed and i is increased to 6.<br>
+6th	i = 6	false	The loop is terminated<br></b>
+
+
+Note that we have used a for loop.<br>
+
+<li>for(int i = 1; i <= num; ++i)<br>
+Here,<br>
+
+<b>int i = 1: initializes the i variable<br>
+i <= num: runs the loop as long as i is less than or equal to num<br>
+++i: increases the i variable by 1 in each iteration<br>
+When i becomes 11, the condition is false and sum will be equal to 0 + 1 + 2 + ... + 10.<br></b>
+
+<h3>Ranged Based for Loop</h3>
+In C++11, a new range-based for loop was introduced to work with collections such as arrays and vectors. Its syntax is:<br>
+
+<b>for (variable : collection) {<br>
+    // body of loop<br>
+}<br>
+Here, for every value in the collection, the for loop is executed and the value is assigned to the variable.<br></b>
+
+<h3>Example 4: Range Based for Loop</h3>
+<b>#include <iostream><br>
+
+using namespace std;<br>
+
+int main() {<br>
+  
+    int num_array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};<br>
+  
+    for (int n : num_array) {<br>
+        cout << n << " ";<br>
+    }<br>
+  
+    return 0;<br>
+}<br>
+Output<br>
+
+1 2 3 4 5 6 7 8 9 10<br></b>
+<li>In the above program, we have declared and initialized an int array named num_array. It has 10 items.<br>
+
+Here, we have used a range-based for loop to access all the items in the array.<br>
+
+<h3>C++ Infinite for loop</h3>
+If the condition in a for loop is always true, it runs forever (until memory is full). For example,<br>
+
+// infinite for loop<br>
+for(int i = 1; i > 0; i++) {<br>
+    // block of code<br>
+}<br>
+In the above program, the condition is always true which will then run the code for infinite times.<br>

@@ -1,0 +1,122 @@
+<h3>C++ if, if...else and Nested if...else</h3>
+In this tutorial, we will learn about the if...else statement to create decision making programs with the help of examples.<br>
+
+In computer programming, we use the if...else statement to run one block of code under certain conditions and another block of code under different conditions.<br>
+
+For example, assigning grades (A, B, C) based on marks obtained by a student.<br>
+
+<b>if the percentage is above 90, assign grade A<br>
+if the percentage is above 75, assign grade B<br>
+if the percentage is above 65, assign grade C<br>
+There are three forms of if...else statements in C++.<br>
+
+if statement<br>
+if...else statement<br>
+if...else if...else statement<br>,/b>
+<h3>C++ if Statement<br></h3>
+The syntax of the<u> if </u>statement is:<br>
+
+<b>if (condition) {<br>
+  // body of if statement<br>
+}<br></b>
+The if statement evaluates the condition inside the parentheses ( ).<br>
+
+<li>If the condition evaluates to true, the code inside the body of if is executed.<br>
+<li>If the condition evaluates to false, the code inside the body of if is skipped.<br>
+<i>Note: The code inside { } is the body of the if statement.<br></i>
+<img src="https://cdn.programiz.com/cdn/farfuture/HY5SnjHTQ0MJtr5nkoljtlvUH0LPS_t_cJBVBqxXn1M/mtime:1592457173/sites/tutorial2program/files/cpp-if-working.png"width="500"<br>
+
+<h3>C++ if...else</h3>
+The if statement can have an optional else clause. Its syntax is:<br>
+
+<b>if (condition) {<br>
+  // block of code if condition is true<br>
+}<br>
+else {<br>
+  // block of code if condition is false<br>
+}<br>
+
+The if..else statement evaluates the condition inside the parenthesis.<br>
+<img src ="https://cdn.programiz.com/cdn/farfuture/PsBB88lS1d8FUx01uVaGejDmfEeulxv5HRjyNCJpPRk/mtime:1592457238/sites/tutorial2program/files/cpp-if-else-working.png"width="500"><br>
+
+
+<b>Working of if...else Statement<br>
+How if...else Statement Works<br>
+If the condition evaluates true,<br>
+
+the code inside the body of if is executed<br>
+the code inside the body of else is skipped from execution<br>
+If the condition evaluates false,<br>
+
+the code inside the body of else is executed<br>
+the code inside the body of if is skipped from execution<br></b>
+
+<h3>C++ if...else...else if statement</h3>
+The if...else statement is used to execute a block of code among two alternatives. However, if we need to make a choice between more than two alternatives, we use the if...else if...else statement.<br>
+
+<b>The syntax of the if...else if...else statement is:<br>
+
+if (condition1) {<br>
+  // code block 1<br>
+}<br>
+else if (condition2){<br>
+  // code block 2<br>
+}<br>
+else {<br>
+  // code block 3<br>
+}<br>
+Here,<br>
+
+<li>If condition1 evaluates to true, the code block 1 is executed.<br>
+<li>If condition1 evaluates to false, then condition2 is evaluated.<br>
+<li>If condition2 is true, the code block 2 is executed.<br>
+<li>If condition2 is false, the code block 3 is executed.<br>
+<img src="https://cdn.programiz.com/cdn/farfuture/xsuXdpAJsveKdf2PFNfjAO12zeaCREtPTT5I0EiafBU/mtime:1592457249/sites/tutorial2program/files/cpp-if-else-if-else-working.png"width="500"><br>
+
+<i>Note: There can be more than one else if statement but only one if and else statements.</i><li><br>
+
+
+
+<h3>C++ Nested if...else</h3>
+<li>Sometimes, we need to use an if statement inside another if statement. This is known as nested if statement.<br>
+
+Think of it as multiple layers of if statements. There is a first, outer if statement, and inside it is another, inner if statement. Its syntax is:<br>
+
+<b>// outer if statement<br>
+if (condition1) {<br>
+
+  // statements<br>
+
+  // inner if statement<br>
+  if (condition2) {<br>
+    // statements<br>
+  }<br>
+}<br></b>
+Notes:<br>
+
+<li>We can add else and else if statements to the inner if statement as required.<br>
+<li>The inner if statement can also be inserted inside the outer else or else if statements (if they exist).<br>
+<li>We can nest multiple layers of if statements.<br>
+
+<h3>Body of if...else With Only One Statement</h3>
+If the body of if...else has only one statement, you can omit { } in the program. For example, you can replace<br>
+
+<li><b>int number = 5;<br>
+
+if (number > 0) {<br>
+  cout << "The number is positive." << endl;<br>
+}<br>
+else {<br>
+  cout << "The number is negative." << endl;<br>
+}<br>
+with<br>
+
+int number = 5;<br>
+
+if (number > 0)<br>
+  cout << "The number is positive." << endl;<br>
+else<br>
+  cout << "The number is negative." << endl;<br>
+The output of both programs will be the same.<br></b>
+
+<i>Note: Although it's not necessary to use { } if the body of if...else has only one statement, using { } makes your code more readable.</i>

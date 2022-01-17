@@ -1,0 +1,88 @@
+<h3>C++ while and do...while Loop</h3>
+In this tutorial, we will learn the use of while and do...while loops in C++ programming .<br>
+
+In computer programming, loops are used to repeat a block of code.<br>
+
+For example, let's say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.<br>
+
+That was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.<br>
+
+<b>There are 3 types of loops in C++.<br>
+
+<li>for loop<br>
+<li>while loop<br>
+<li>do...while loop<br>
+In the previous tutorial, we learned about the C++ for loop. Here, we are going to learn about while and do...while loops.<br>
+
+<h3>C++ while Loop</h3>
+<b>The syntax of the while loop is:<br>
+
+while (condition) {<br>
+    // body of the loop<br>
+}<br></b>
+Here,<br>
+
+A while loop evaluates the condition<br>
+If the condition evaluates to true, the code inside the while loop is executed.<br>
+The condition is evaluated again.<br>
+This process continues until the condition is false.<br>
+When the condition evaluates to false, the loop terminates.<br>
+
+
+<h3>Flowchart of while Loop</h3>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-while-loop-flowchart.png"width="500"<br>
+Flowchart of C++ while loop<br>
+
+<h3>C++ do...while Loop</h3>
+
+The do...while loop is a variant of the while loop with one important difference: the body of do...while loop is executed once before the condition is checked.<br>
+
+<b>Its syntax is:<br>
+
+do {<br>
+   // body of loop;<br>
+}<br>
+while (condition);<br></b>
+Here,<br>
+
+The body of the loop is executed at first. Then the condition is evaluated.<br>
+If the condition evaluates to true, the body of the loop inside the do statement is executed again.<br>
+The condition is evaluated once again.<br>
+If the condition evaluates to true, the body of the loop inside the do statement is executed again.<br>
+
+<h3>Flowchart of do...while Loop</h3>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-do-while-loop-flowchart.png"width="500"><br>
+Flowchart of C++ do...while loop<br>
+<h3>Infinite while loop</h3>
+If the condition of a loop is always true, the loop runs for infinite times (until the memory is full). For example,<br>
+
+<b>// infinite while loop<br>
+while(true) {<br>
+    // body of the loop<br>
+}<br></b>
+Here is an example of an infinite do...while loop.<br>
+<b>// infinite do...while loop<br>
+
+int count = 1;<br>
+
+do {<br>
+   // body of loop<br>
+} <br>
+while(count == 1);<br></b>
+In the above programs, the condition is always true. Hence, the loop body will run for infinite times.<br>
+
+
+<h3>for vs while loops</h3>
+A for loop is usually used when the number of iterations is known. For example,<br>
+
+<b>// This loop is iterated 5 times<br>
+for (int i = 1; i <=5; ++i) {<br>
+   // body of the loop<br>
+}<br></b>
+Here, we know that the for-loop will be executed 5 times.
+
+<li>However, while and do...while loops are usually used when the number of iterations is unknown. For example,<br>
+
+<b>while (condition) {<br>
+    // body of the loop<br>
+}</b>

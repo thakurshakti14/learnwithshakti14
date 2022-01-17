@@ -1,0 +1,112 @@
+<h3>C++ break Statement</h3>
+In this tutorial, we will learn about the break statement and its working in loops with the help of examples.<br>
+
+In C++, the break statement terminates the loop when it is encountered.<br>
+
+<b>The syntax of the break statement is:<br>
+
+break;<br></b>
+Before you learn about the break statement, make sure you know about:<br>
+
+<li>C++ for loop<br>
+<li>C++ if...else<br>
+<li>C++ while loop<br>
+<h3>Working of C++ break Statement</h3>
+<img src= "https://cdn.programiz.com/sites/tutorial2program/files/cpp-break-statement.png"width ="500">
+<h3>Example 1: break with for loop</h3>
+<b>// program to print the value of i<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    for (int i = 1; i <= 5; i++) {<br>
+        // break condition     <br>
+        if (i == 3) {<br>
+            break;<br>
+        }<br>
+        cout << i << endl;<br>
+    }<br>
+
+return 0;<br>
+}<br>
+Output<br>
+
+<li>1<br>
+<li>2<br></b>
+<h3>Example 2: break with while loop</h3>
+<b>// program to find the sum of positive numbers<br>
+// if the user enters a negative numbers, break ends the loop<br>
+// the negative number entered is not added to sum<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    int number;<br>
+    int sum = 0;<br>
+
+    while (true) {<br>
+        // take input from the user<br>
+        cout << "Enter a number: ";<br>
+        cin >> number;<br>
+
+        // break condition<br>
+        if (number < 0) {<br>
+            break;<br>
+        }<br>
+
+        // add all positive numbers<br>
+        sum += number;<br>
+    }<br>
+
+    // display the sum<br>
+    cout << "The sum is " << sum << endl;<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Enter a number: 1<br>
+<li>Enter a number: 2<br>
+<li>Enter a number: 3<br>
+<li>Enter a number: -5<br>
+<li>The sum is 6. <br>
+<h3>break with Nested loop</h3>
+<b>When break is used with nested loops, break terminates the inner loop. For example,<br>
+
+// using break statement inside<br>
+// nested for loop<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    int number;<br>
+    int sum = 0;<br>
+
+    // nested for loops<br>
+
+    // first loop<br>
+    for (int i = 1; i <= 3; i++) {<br>
+        // second loop<br>
+        for (int j = 1; j <= 3; j++) {<br>
+            if (i == 2) {<br>
+                break;<br>
+            }<br>
+            cout << "i = " << i << ", j = " << j << endl;<br>
+        }<br>
+    }<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>i = 1, j = 1<br>
+<li>i = 1, j = 2<br>
+<li>i = 1, j = 3<br>
+<li>i = 3, j = 1<br>
+<li>i = 3, j = 2<br>
+<li>i = 3, j = 3<br>
+
+

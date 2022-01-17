@@ -1,0 +1,104 @@
+<html>
+<head>
+<body>
+<b><h1>C++ Variables, Literals and Constants<br></h1>
+In this tutorial, we will learn about variables, literals, and constants in C++ with the help of examples.<br>
+
+<h2><b>C++ Variables<br> </h2>
+In programming, a variable is a container (storage area) to hold data.<br>
+
+To indicate the storage area, each variable should be given a unique name (identifier). For example,<br>
+
+<ul>int age = 14;</ul>
+Here, age is a variable of the int data type, and we have assigned an integer value 14 to it.</strong><br><br>
+
+<i>Note: The int data type suggests that the variable can only hold integers. <br>Similarly, we can use the double data type if we have to store decimals and<br> exponentials.</i><br><br>
+
+We will learn about all the data types in detail in the next tutorial.<br><br>
+
+The value of a variable can be changed, hence the name variable.
+
+<h3><em>int age = 14;   // age is 14<br></em>
+<em>age = 17;       // age is 17<br><br></em></h3>
+<h3>Rules for naming a variable</h3> 
+
+<li>A variable name can only have alphabets, numbers, and the underscore _.<br></li>
+<li>A variable name cannot begin with a number.<br></li>
+<li>It is a preferred practice to begin variable names with a lowercase character. For example, name is preferable to Name.<br></li>
+<li>A variable name cannot be a keyword. For example, int is a keyword that is used to denote integers.<br></li>
+<li>A variable name can start with an underscore. However, it's not considered a good practice.<br><br></li>
+
+<i>Note: We should try to give meaningful names to variables. For example, first_name is a better variable name than fn.</i><br></br>
+
+<h2>C++ Literals</h2>
+<i>Literals are data used for representing fixed values. They can be used directly in the code. For example: 1, 2.5, 'c' etc.<br><br>
+
+Here, 1, 2.5 and 'c' are literals. Why? You cannot assign different values to these terms.<br></i>
+
+<b><ul>Here's a list of different literals in C++ programming.</ul></b>
+
+<h2>1. Integers</h2>
+An integer is a numeric literal(associated with numbers) without any fractional or exponential part. There are three types of integer literals in C programming:
+
+<li>decimal (base 10)</li>
+<li>octal (base 8)</li>
+<li>hexadecimal (base 16)</li><br>
+For example:<br><br>
+
+<li>Decimal: 0, -9, 22 etc</li>
+<li>Octal: 021, 077, 033 etc</li>
+<li>Hexadecimal: 0x7f, 0x2a, 0x521 etc</li><br>
+<b>In C++ programming, octal starts with a 0, and hexadecimal starts with a 0x.</b><br>
+<h2>2. Floating-point Literals</h2>
+<strong>A floating-point literal is a numeric literal that has either a fractional form or an exponent form. For example:<br></strong>
+
+
+<li>-2.0<br></li>
+
+<li>0.0000234<br></li>
+
+<li>-0.22E-5<br></li>
+
+<ul>Note: E-5 = 10-5<br></ul>
+
+<h2>3. Characters</h2><br>
+A character literal is created by enclosing a single character inside single quotation marks. For example: <br><li>'a', 'm', 'F', '2', '}' etc.</li>
+
+<h2>4. Escape Sequences</h2>
+<i>Sometimes, it is necessary to use characters that cannot be typed or has special meaning in C++ programming. For example, newline (enter), tab, question mark, etc.<br></i>
+
+<b>In order to use these characters, escape sequences are used.<br></b>
+
+<li>Escape Sequences    ::     Characters</li><br>
+<li>\b   =	Backspace</li><br>
+<li>\f    =    Form feed</li><br>
+<li>\n   =	Newline</li><br>
+<li>\r   =	Return</li><br>
+<li>\t   =	Horizontal tab</li><br>
+<li>\v    =	Vertical tab</li><br>
+<li>\\    =   Backslash</li><br>
+<li>\'      =	Single quotation mark</li><br>
+<li>\"    =	Double quotation mark</li><br>
+<li>\?    =	Question mark</li><br>
+<li>\0    =	Null Character</li><br>
+<h2>5. String Literals</h2>
+<i>A string literal is a sequence of characters enclosed in double-quote marks. For example:</i><br>
+
+<li>"good"	string constant</li><br>
+<li>""	null string constant</li><br>
+<li>" "	string constant of six white space</li><br>
+<li>"x"	string constant having a single character</li><br>
+"Earth is round\n"	prints string with a newline
+We will learn about strings in detail in the C++ string tutorial.
+
+<h2>C++ Constants</h2>
+<i>In C++, we can create variables whose value cannot be changed. For that, we use the const keyword. Here's an example:<br></i>
+
+<li>const int LIGHT_SPEED = 299792458;<br>
+LIGHT_SPEED = 2500 // Error! LIGHT_SPEED is a constant.</li><br>
+<i>Here, we have used the keyword const to declare a constant named LIGHT_SPEED. If we try to change the value of LIGHT_SPEED, we will get an error.</i><br>
+
+<i>A constant can also be created using the #define preprocessor directive. We will learn about it in detail in the C++ Macros tutorial.</i>
+</html>
+</head>
+</body>

@@ -1,0 +1,68 @@
+<h3>C++ Enumeration</h3>
+In this article, you will learn to work with enumeration (enum). Also, you will learn where enums are commonly used in C++ programming.<br>
+
+An enumeration is a user-defined data type that consists of integral constants. To define an enumeration, keyword enum is used.<br>
+
+
+<b>enum season { spring, summer, autumn, winter };</b><br>
+Here, the name of the enumeration is season.<br>
+And, spring, summer and winter are values of type season.<br>
+By default, spring is 0, summer is 1 and so on. You can change the default value of an enum element during declaration (if necessary).<br>
+<b>enum season <br>
+{   spring = 0, <br>
+    summer = 4, <br>
+    autumn = 8,<br>
+    winter = 12<br>
+};<br></b>
+<h3>Enumerated Type Declaration</h3>
+When you create an enumerated type, only blueprint for the variable is created. Here's how you can create variables of enum type.<br>
+
+enum boolean { false, true };<br>
+<b>// inside function<br>
+enum boolean check;<br>
+Here, a variable check of type enum boolean is created.<br>
+Here is another way to declare same check variable using different syntax.<br>
+enum boolean <br>
+{ <br>
+   false, true<br>
+} check;<br>
+<h3>Example 1: Enumeration Type</h3>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+enum week { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };<br>
+
+int main()<br>
+{<br>
+    week today;<br>
+    today = Wednesday;<br>
+    cout << "Day " << today+1;<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+Day 4<br></b>
+<h3>Why enums are used in C++ programming?</h3>
+An enum variable takes only one value out of many possible values. Example to demonstrate it,<br>
+
+<b>#include <iostream><br>
+using namespace std;<br>
+
+enum suit {<br>
+    club = 0,<br>
+    diamonds = 10,<br>
+    hearts = 20,<br>
+    spades = 3<br>
+} card;<br>
+
+int main() <br>
+{<br>
+    card = club;<br>
+    cout << "Size of enum variable " << sizeof(card) << " bytes.";   <br>
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Size of enum variable 4 bytes.<br></b>
+
+

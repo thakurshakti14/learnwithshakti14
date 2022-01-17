@@ -1,0 +1,112 @@
+<h3>C++ Basic Input/Output</h3>
+<i>In this tutorial, we will learn to use the cin object to take input from the user, and the cout object to display output to the user with the help of examples.</i><br>
+
+<h3>C++ Output</h3>
+<b>In C++, cout sends formatted output to standard output devices, such as the screen. We use the cout object along with the << operator for displaying output.</b><br>
+
+<u><li>Example 1: String Output<br></u><br>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    // prints the string enclosed in double quotes<br>
+    cout << "This is C++ Programming";<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+This is C++ Programming<br></b><br>
+<b><u>How does this program work?<br></u></b>
+
+We first include the iostream header file that allows us to display output.<br>
+The cout object is defined inside the std namespace. To use the std namespace, we used the using namespace std; statement.<br>
+Every C++ program starts with the main() function. The code execution begins from the start of the main() function.<br>
+cout is an object that prints the string inside quotation marks " ". It is followed by the << operator.<br>
+return 0; is the "exit status" of the main() function. The program ends with this statement, however, this statement is not mandatory.<br>
+<i><li>Note: If we don't include the using namespace std; statement, we need to use std::cout instead of cout.</i><br>
+
+<li>This is the preferred method as using the <u>std</u> namespace can create potential problems.<br>
+
+<li>However, we have used the <u>std </u>namespace in our tutorials in order to make the codes more readable.<br>
+
+<b>#include <iostream><br>
+
+   int main() {<br>
+   // prints the string enclosed in double quotes<br>
+    std::cout << "This is C++ Programming";<br>
+    return 0;<br>
+}<br></b>
+<h3>Example 2: Numbers and Characters Output</h3>
+
+<li>To print the numbers and character variables, we use the same cout object but without using quotation marks.<br>
+
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    int num1 = 70;<br>
+    double num2 = 256.783;<br>
+    char ch = 'A';<br>
+
+    cout << num1 << endl;    // print integer<br>
+    cout << num2 << endl;    // print double<br>
+    cout << "character: " << ch << endl;    // print char<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+70<br><br>
+256.783<br>
+character: A<br></b>
+<li>Notes:<br>
+
+<li>The endl manipulator is used to insert a new line. That's why each output is displayed in a new line.<br>
+<li>The << operator can be used more than once if we want to print different variables, strings and so on in a single statement. For example:<br>
+<u>cout << "character: " << ch << endl;</u><br>
+<H3>C++ Input</H3>
+<li>In C++, cin takes formatted input from standard input devices such as the keyboard. We use the cin object along with the >> operator for taking input.<br>
+
+<h3>Example 3: Integer Input/Output</h3>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    int num;<br>
+    cout << "Enter an integer: ";<br>
+    cin >> num;   // Taking input<br>
+    cout << "The number is: " << num;<br>
+    return 0;<br>
+}<br>
+Output<br><br>
+
+Enter an integer: 70<br>
+The number is: 70<br></b>
+In the program, we used<br>
+
+<u><li>cin >> num;<br></u>
+to take input from the user. The input is stored in the variable num. We use the >> operator with cin to take input.<br>
+
+<li><b>Note: If we don't include the using namespace std; statement, we need to use std::cin instead of cin.</b><br>
+
+<h3>C++ Taking Multiple Inputs</h3>
+<b>#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+    char a;<br>
+    int num;<br>
+
+    cout << "Enter a character and an integer: ";<br>
+    cin >> a >> num;<br>
+
+    cout << "Character: " << a << endl;<br>
+    cout << "Number: " << num;<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+Enter a character and an integer: F<br>
+23<br>
+Character: F<br>
+Number: 23<br></b>

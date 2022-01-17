@@ -1,0 +1,95 @@
+<h3>C++ Structures</h3>
+In this article, you'll learn about structures in C++ programming; what is it, how to define it and use it in your program.<br>
+
+Structure is a collection of variables of different data types under a single name. It is similar to a class in that, both holds a collecion of data of different data types.<br>
+
+For example: You want to store some information about a person: his/her name, citizenship number and salary. You can easily create different variables name, citNo, salary to store <br>
+these information separately.<br>
+
+However, in the future, you would want to store information about multiple persons. Now, you'd need to create different variables for each information per person: name1, citNo1, <br>
+salary1, name2, citNo2, salary2<br>
+
+You can easily visualize how big and messy the code would look. Also, since no relation between the variables (information) would exist, it's going to be a daunting task.<br>
+
+A better approach will be to have a collection of all related information under a single name Person, and use it for every person. Now, the code looks much cleaner, readable and <br>
+efficient as well.<br>
+
+This collection of all related information under a single name Person is a structure.<br>
+
+<h3>How to declare a structure in C++ programming?</h3>
+The struct keyword defines a structure type followed by an identifier (name of the structure).<br>
+
+Then inside the curly braces, you can declare one or more members (declare variables inside curly braces) of that structure. For example:<br>
+
+<b>struct Person<br>
+{<br>
+    char name[50];<br>
+    int age;<br>
+    float salary;<br>
+};<br></b>
+Here a structure person is defined which has three members: name, age and salary.<br>
+When a structure is created, no memory is allocated.<br>
+
+The structure definition is only the blueprint for the creating of variables. You can imagine it as a datatype. When you define an integer as below:<br>
+
+<b>int foo;</b><br>
+The int specifies that, variable foo can hold integer element only. Similarly, structure definition only specifies that, what property a structure variable holds when it is defined.<br>
+
+Note: Remember to end the declaration with a semicolon (;)<br>
+<h3>How to define a structure variable?</h3>
+Once you declare a structure person as above. You can define a structure variable as:<br>
+
+<b>Person bill;<br></b>
+Here, a structure variable bill is defined which is of type structure Person.<br>
+
+When structure variable is defined, only then the required memory is allocated by the compiler.<br>
+
+Considering you have either 32-bit or 64-bit system, the memory of float is 4 bytes, memory of int is 4 bytes and memory of char is 1 byte.<br>
+
+Hence, 58 bytes of memory is allocated for structure variable bill.<br>
+<h3>How to access members of a structure?</h3>
+The members of structure variable is accessed using a dot (.) operator.<br>
+
+Suppose, you want to access age of structure variable bill and assign it 50 to it. You can perform this task by using following code below:<br>
+
+<b>bill.age = 50;</b><br>
+<h3>Example: C++ Structure</h3>
+C++ Program to assign data to members of a structure variable and display it.<br>
+
+<b>#include <iostream><br>
+using namespace std;<br>
+
+struct Person<br>
+{<br>
+    char name[50];<br>
+    int age;<br>
+    float salary;<br>
+};<br>
+
+int main()<br>
+{<br>
+    Person p1;<br>
+    
+    cout << "Enter Full name: ";<br>
+    cin.get(p1.name, 50);<br>
+    cout << "Enter age: ";<br>
+    cin >> p1.age;<br>
+    cout << "Enter salary: ";<br>
+    cin >> p1.salary;<br>
+
+    cout << "\nDisplaying Information." << endl;<br>
+    cout << "Name: " << p1.name << endl;<br>
+    cout <<"Age: " << p1.age << endl;<br>
+    cout << "Salary: " << p1.salary;<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Enter Full name: Magdalena Dankova<br>
+<li>Enter age: 27<br>
+<li>Enter salary: 1024.4<br>
+<li>Displaying Information.<br>
+<li>Name: Magdalena Dankova<br>
+<li>Age: 27<br>
+<li>Salary: 1024.4<br>

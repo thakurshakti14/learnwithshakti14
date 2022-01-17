@@ -1,0 +1,51 @@
+<h3>C++ Constructors</h3>
+In this tutorial, we will learn about the C++ constructor and its type with the help examples.<br>
+
+A constructor is a special type of member function that is called automatically when an object is created.<br>
+
+In C++, a constructor has the same name as that of the class and it does not have a return type. For example,<br>
+
+<b>class  Wall {<br>
+  public:<br>
+    // create a constructor<br>
+    Wall() {<br>
+      // code<br>
+    }<br>
+};<br>
+Here, the function Wall() is a constructor of the class Wall. Notice that the constructor<br>
+
+<li>has the same name as the class,<br>
+<li>does not have a return type, and<br>
+<li>is public<br>
+
+<h3>C++ Default Constructor</h3>
+A constructor with no parameters is known as a default constructor. In the example above, Wall() is a default constructor.<br>
+<h3>Example 1: C++ Default Constructor</h3>
+<b>// C++ program to demonstrate the use of default constructor<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+// declare a class<br>
+class  Wall {<br>
+  private:<br>
+    double length;<br>
+
+  public:<br>
+    // default constructor to initialize variable<br>
+    Wall() {<br>
+      length = 5.5;<br>
+      cout << "Creating a wall." << endl;<br>
+      cout << "Length = " << length << endl;<br>
+    }<br>
+};<br>
+
+int main() {<br>
+  Wall wall1;<br>
+  return 0;<br>
+}<br>
+Output<br>
+
+<li>Creating a Wall<br>
+<li>Length = 5.5<br>
+

@@ -1,0 +1,59 @@
+<h3>C++ goto Statement</h3>
+In this article, you'll learn about goto statment, how it works and why should it be avoided.<br>
+
+In C++ programming, the goto statement is used for altering the normal sequence of program execution by transferring control to some other part of the program.<br>
+
+<b>Syntax of goto Statement<br>
+goto label;<br>
+... .. ...<br>
+... .. ...<br>
+... .. ...<br>
+label: <br>
+statement;<br>
+... .. ...<br></b>
+In the syntax above, label is an identifier. When goto label; is encountered, the control of program jumps to label: and executes the code below it.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-goto-working.png"width=500">
+Working of goto in C++<br>
+<h3>Example: goto Statement</h3>
+<b>// This program calculates the average of numbers entered by the user.<br>
+// If the user enters a negative number, it ignores the number and <br>
+// calculates the average number entered before it.<br>
+
+# include <iostream><br>
+using namespace std;<br>
+
+int main()<br>
+{<br>
+    float num, average, sum = 0.0;<br>
+    int i, n;<br>
+
+    cout << "Maximum number of inputs: ";<br>
+    cin >> n;<br>
+
+    for(i = 1; i <= n; ++i)<br>
+    {<br>
+        cout << "Enter n" << i << ": ";<br>
+        cin >> num;<br>
+        
+        if(num < 0.0)<br>
+        {<br>
+           // Control of the program move to jump:<br>
+            goto jump;<br>
+        } <br>
+        sum += num;<br>
+    }<br>
+    
+jump:<br>
+    average = sum / (i - 1);<br>
+    cout << "\nAverage = " << average;<br>
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>Maximum number of inputs: 10<br>
+<li>Enter n1: 2.3<br>
+<li>Enter n2: 5.6<br>
+<li>Enter n3: -5.6<br>
+
+<li>Average = 3.95<br>
+

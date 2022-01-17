@@ -1,0 +1,64 @@
+<h3>C++ Operator Overloading</h3>
+In this tutorial, we will learn about operator overloading with the help of examples.<br>
+
+In C++, we can change the way operators work for user-defined types like objects and structures. This is known as operator overloading. For example,<br>
+
+Suppose we have created three objects c1, c2 and result from a class named Complex that represents complex numbers.<br>
+
+Since operator overloading allows us to change how operators work, we can redefine how the + operator works and use it to add the complex numbers of c1 and c2 by writing the <br>
+following code:<br>
+
+<li>result = c1 + c2;<br>
+instead of something like<br>
+
+<li>result = c1.addNumbers(c2);<br>
+This makes our code intuitive and easy to understand.<br>
+
+<i>Note: We cannot use operator overloading for fundamental data types like int, float, char and so on.<br></i>
+<h3>Syntax for C++ Operator Overloading</h3>
+To overload an operator, we use a special operator function. We define the function inside the class or structure whose objects/variables we want the overloaded operator to work with.<br>
+
+class className {<br>
+    ... .. ...<br>
+    public<br>
+       returnType operator symbol (arguments) {<br>
+           ... .. ...<br>
+       } <br>
+    ... .. ...<br>
+};<br>
+Here,<br>
+
+<li>returnType is the return type of the function.
+<li>operator is a keyword.
+<li>symbol is the operator we want to overload. Like: +, <, -, ++, etc.
+<li>arguments is the arguments passed to the function.
+<h3>Operator Overloading in Unary Operators</h3>
+Unary operators operate on only one operand. The increment operator ++ and decrement operator -- are examples of unary operators.<br>
+<h3>Operator Overloading in Binary Operators</h3>
+Binary operators work on two operands. For example,<br>
+
+<li>result = num + 9;<br>
+Here, + is a binary operator that works on the operands num and 9.<br>
+
+When we overload the binary operator for user-defined types by using the code:<br>
+
+<li>obj3 = obj1 + obj2;<br>
+The operator function is called using the obj1 object and obj2 is passed as an argument to the function.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-operator-overloading.png"width="500">
+Overloading binary operators in C++<br>
+<h3>Things to Remember in C++ Operator Overloading</h3>
+Two operators = and & are already overloaded by default in C++. For example, to copy objects of the same class, we can directly use the = operator. We do not need to create an operator function.<br>
+Operator overloading cannot change the precedence and associativity of operators. However, if we want to change the order of evaluation, parentheses should be used.<br>
+There are 4 operators that cannot be overloaded in C++. They are:<br>
+<li>:: (scope resolution)<br>
+<li>. (member selection)<br>
+<li>.* (member selection through pointer to function)<br>
+<li>?: (ternary operator)<br>
+
+
+
+
+
+
+
+

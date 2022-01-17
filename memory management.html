@@ -1,0 +1,61 @@
+<h3>C++ Memory Management: new and delete</h3>
+In this tutorial, we will learn to manage memory effectively in C++ using new and delete operations with the help of examples.<br>
+
+C++ allows us to allocate the memory of a variable or an array in run time. This is known as dynamic memory allocation.<br>
+
+In other programming languages such as Java and Python, the compiler automatically manages the memories allocated to variables. But this is not the case in C++.<br>
+
+In C++, we need to deallocate the dynamically allocated memory manually after we have no use for the variable.<br>
+
+We can allocate and then deallocate memory dynamically using the new and delete operators respectively.<br>
+<h3>C++ new Operator</h3>
+The new operator allocates memory to a variable. For example,<br>
+
+<b>// declare an int pointer<br>
+int* pointVar;<br>
+
+// dynamically allocate memory<br>
+// using the new keyword <br>
+pointVar = new int;<br>
+
+// assign value to allocated memory<br>
+*pointVar = 45;<br></b>
+Here, we have dynamically allocated memory for an int variable using the new operator.<br>
+
+Notice that we have used the pointer pointVar to allocate the memory dynamically. This is because the new operator returns the address of the memory location.<br>
+
+In the case of an array, the new operator returns the address of the first element of the array.<br>
+
+From the example above, we can see that the syntax for using the new operator i<br>
+
+pointerVariable = new dataType;<br>
+<h3>delete Operator</h3>
+Once we no longer need to use a variable that we have declared dynamically, we can deallocate the memory occupied by the variable.<br>
+
+For this, the delete operator is used. It returns the memory to the operating system. This is known as memory deallocation.<br>
+
+The syntax for this operator is<br>
+
+delete pointerVariable;<br>
+Consider the code:<br>
+
+<b>// declare an int pointer<br>
+int* pointVar;<br>
+
+// dynamically allocate memory<br>
+// for an int variable <br>
+pointVar = new int;<br>
+
+// assign value to the variable memory
+*pointVar = 45;<br>
+
+// print the value stored in memory<br>
+cout << *pointVar; // Output: 45<br>
+
+// deallocate the memory<br>
+delete pointVar;<br></b>
+Here, we have dynamically allocated memory for an int variable using the pointer pointVar.<br>
+After printing the contents of pointVar, we deallocated the memory using delete.<br>
+
+<i>Note: If the program uses a large amount of unwanted memory using new, the system may crash because there will be no memory available for the operating system. In this case, the delete operator can help the system from crash.</i><br>
+

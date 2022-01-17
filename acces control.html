@@ -1,0 +1,64 @@
+<h3>C++ Public, Protected and Private Inheritance</h3>
+In this tutorial, we will learn to use public, protected and private inheritance in C++ with the help of examples.<br>
+
+In C++ inheritance, we can derive a child class from the base class in different access modes. For example,<br>
+
+<b>class Base {<br>
+.... ... ....<br>
+};<br>
+
+class Derived : public Base {<br>
+.... ... ....<br>
+};<br></b>
+Notice the keyword public in the code<br>
+
+<b>class Derived : public Base</b><br>
+This means that we have created a derived class from the base class in public mode. Alternatively, we can also derive classes in protected or private modes.<br>
+
+These 3 keywords (public, protected, and private) are known as access specifiers in C++ inheritance.<br>
+<h3>public, protected and private inheritance in C++</h3>
+<b>public, protected, and private inheritance have the following features:</b><br>
+
+<li>public inheritance makes public members of the base class public in the derived class, and the protected members of the base class remain protected in the derived class.<br>
+<li>protected inheritance makes the public and protected members of the base class protected in the derived class.<br>
+<li>private inheritance makes the public and protected members of the base class private in the derived class.<br>
+<i>Note: private members of the base class are inaccessible to the derived class.<br></i>
+
+<b>class Base {<br>
+    public:<br>
+        int x;<br>
+    protected:<br>
+        int y;<br>
+    private:<br>
+        int z;<br>
+};<br>
+
+class PublicDerived: public Base {<br>
+    // x is public<br>
+    // y is protected<br>
+    // z is not accessible from PublicDerived<br>
+};<br>
+
+class ProtectedDerived: protected Base {<br>
+    // x is protected<br>
+    // y is protected<br>
+    // z is not accessible from ProtectedDerived<br>
+};<br>
+
+class PrivateDerived: private Base {<br>
+    // x is private<br>
+    // y is private<br>
+    // z is not accessible from PrivateDerived<br>
+}<br></b>
+<h3>Accessibility in public Inheritance</h3>
+<li>Accessibility	private members	protected members	public members<br>
+<li>Base Class	Yes	Yes	Yes<br>
+<li>Derived Class	No	Yes	Yes<br>
+<h3>Accessibility in protected Inheritance</h3>
+<li>Accessibility	private members	protected members	public members<br>
+<li>Base Class	Yes	Yes	Yes<br>
+<li>Derived Class	No	Yes	Yes (inherited as protected variables)<br>
+<h3>Accessibility in private Inheritance</h3>
+<li>Accessibility	private members	protected members	public members<br>
+<li>Base Class	Yes	Yes	Yes<br>
+<li>Derived Class	No	Yes (inherited as private variables)	Yes (inherited as private variables)<br>

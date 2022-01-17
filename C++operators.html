@@ -1,0 +1,154 @@
+<h3>C++ Operators</h3>
+In this tutorial, we will learn about the different types of operators in C++ with the help of examples. In programming, an operator is a symbol that operates on a value or a variable.<br>
+
+Operators are symbols that perform operations on variables and values. For example, + is an operator used for addition, while - is an operator used for subtraction.<br>
+
+<b>Operators in C++ can be classified into 6 types:<br>
+
+<li>Arithmetic Operators<br>
+<li>Assignment Operators<br>
+<li>Relational Operators<br>
+<li>Logical Operators<br>
+<li>Bitwise Operators<br>
+<li>Other Operators<br></b>
+<h3>1. C++ Arithmetic Operators</h3>
+Arithmetic operators are used to perform arithmetic operations on variables and data. For example,<br>
+
+<u>a + b;</u><br>
+Here, the + operator is used to add two variables a and b. Similarly there are various other arithmetic operators in C++.<br>
+
+<li>Operator   ::	Operation<br>
+<li>+	Addition<br>
+<li>-	Subtraction<br>
+<li>*	Multiplication<br>
+<li>/	Division<br>
+<li>%	Modulo Operation (Remainder after division)<br>
+
+
+<h4>/ Division Operator</h4>
+
+Note the operation (a / b) in our program. The / operator is the division operator.<br>
+
+As we can see from the above example, if an integer is divided by another integer, we will get the quotient. However, if either divisor or dividend is a floating-point number, we will get the result in decimals.<br>
+
+<b>In C++,<br>
+
+7/2 is 3<br>
+7.0 / 2 is 3.5<br>
+7 / 2.0 is 3.5<br>
+7.0 / 2.0 is 3.5<br></b>
+<u>% Modulo Operator</u>
+
+The modulo operator % computes the remainder. When a = 9 is divided by b = 4, the remainder is 1.<br>
+
+<li>Note: The % operator can only be used with integers.<br>
+
+<h3>Increment and Decrement Operators</h3>
+C++ also provides increment and decrement operators: ++ and -- respectively.<br>
+
+<li>++ increases the value of the operand by 1<br>
+<li>-- decreases it by 1<br>
+For example,<br>
+
+<b>int num = 5;<br>
+
+// increment operator<br>
+++num;  // 6<br>
+Here, the code ++num; increases the value of num by 1.<br></b>
+
+
+<h3>2. C++ Assignment Operators</h3>
+In C++, assignment operators are used to assign values to variables. For example,<br>
+
+// assign 5 to a<br>
+<li>a = 5;<br>
+Here, we have assigned a value of 5 to the variable a.<br>
+
+<li>Operato   ::  Example  ::	Equivalent to<br>
+<li>=    =	a = b;   =	a = b;<br>
+<li>+=   =	a += b;  =	a = a + b;<br>
+<li>-=    =	a -= b;   =	a = a - b;<br>
+<li>*=   =	a *= b;    =	a = a * b;<br>
+<li>/=   =	a /= b;   =	a = a / b;<br>
+<li>%=   =	a %= b;  =	a = a % b;<br>
+
+<h3>3. C++ Relational Operators</h3>
+A relational operator is used to check the relationship between two operands. For example,<br>
+
+<b>// checks if a is greater than b<br>
+<li>a > b;<br>
+Here, > is a relational operator. It checks if a is greater than b or not.<br>
+
+If the relation is true, it returns 1 whereas if the relation is false, it returns 0.<br></b>
+
+<li>Operator     ::	 Meaning	  ::    Example<br>
+<li>==   =	Is Equal To    =	3 == 5 gives us false<br>
+<li>!=   =	Not Equal To   =	3 != 5 gives us true<br>
+<li>>   =	Greater Than   =	3 > 5 gives us false<br>
+<li><   =	Less Than   =	3 < 5 gives us true<br>
+<li>>=   =	Greater Than or Equal To  =	3 >= 5 give us false<br>
+<li><=   =	Less Than or Equal To    =	3 <= 5 gives us true<br>
+
+
+<h3>4. C++ Logical Operators</h3>
+Logical operators are used to check whether an expression is true or false. If the expression is true, it returns 1 whereas if the expression is false, it returns 0.<br>
+
+<b>Operator	Example	Meaning<br>
+&&	expression1 && expression2	Logical AND.<br>
+True only if all the operands are true.<br>
+||	expression1 || expression2	Logical OR.<br>
+True if at least one of the operands is true.<br>
+!	!expression	Logical NOT.<br>
+True only if the operand is false.<br></b>
+In C++, logical operators are commonly used in decision making. To further understand the logical operators, let's see the following examples,<br>
+
+Suppose,<br>
+<li>a = 5<br>
+<li>b = 8<br>
+
+Then,<br>
+
+<li>(a > 3) && (b > 5) evaluates to true<br>
+<li>(a > 3)  && (b < 5) evaluates to false<br>
+
+<li>(a > 3) || (b > 5) evaluates to true<br>
+<li>(a > 3) || (b < 5) evaluates to true<br>
+<li>(a < 3) || (b < 5) evaluates to false<br>
+
+<li>!(a < 3) evaluates to true<br>
+<li>!(a > 3) evaluates to false<br>
+
+
+<b>Explanation of logical operator program</b><br>
+
+<li>(3 != 5) && (3 < 5) evaluates to 1 because both operands (3 != 5) and (3 < 5) are 1 (true).<br>
+<li>(3 == 5) && (3 < 5) evaluates to 0 because the operand (3 == 5) is 0 (false).<br>
+<li>(3 == 5) && (3 > 5) evaluates to 0 because both operands (3 == 5) and (3 > 5) are 0 (false).<br>
+<li>(3 != 5) || (3 < 5) evaluates to 1 because both operands (3 != 5) and (3 < 5) are 1 (true).<br>
+<li>(3 != 5) || (3 > 5) evaluates to 1 because the operand (3 != 5) is 1 (true).<br>
+<li>(3 == 5) || (3 > 5) evaluates to 0 because both operands (3 == 5) and (3 > 5) are 0 (false).<br>
+<li>!(5 == 2) evaluates to 1 because the operand (5 == 2) is 0 (false).<br>
+<li>!(5 == 5) evaluates to 0 because the operand (5 == 5) is 1 (true).<br>
+<h3>5. C++ Bitwise Operators</h3>
+In C++, bitwise operators are used to perform operations on individual bits. They can only be used alongside char and int data types.<br>
+
+<li>Operator   ::	Description<br>
+<li>&  =  	Binary AND<br>
+<li>|  =  	Binary OR<br>
+<li>^   =  	Binary XOR<br>
+<li>~   =  	Binary One's Complement<br>
+<li><<  =  	Binary Shift Left<br>
+<li>>>   =  	Binary Shift Right<br>
+
+
+<h3>6. Other C++ Operators</h3>
+Here's a list of some other common operators available in C++. We will learn about them in later tutorials.<br>
+
+<li>Operator       ::	Description     ::	Example<br>
+<li>sizeof   =  returns the size of data type  = 	sizeof(int); // 4<br>
+<li>?:   =  	returns value based on the condition    = 	string result = (5 > 0) ? "even" : "odd"; // "even"<br>
+<li>&   =  	represents memory address of the operand     = 	&num; // address of num<br>
+<li>.   =  	accesses members of struct variables or class objects  = 	s1.marks = 92;<br>
+<li>->  =  	used with pointers to access the class or struct variables  = 	ptr->marks = 92;<br>
+<li><<  =  	prints the output value    = 	cout << 5;<br>
+<li>>>   =  	gets the input value	 =   cin >> num;<br>

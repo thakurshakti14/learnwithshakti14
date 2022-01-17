@@ -1,0 +1,100 @@
+<h2>C++ Data Types</h2><br>
+<b>In this tutorial, we will learn about basic data types such as int, float, char, etc. in C++ programming with the help of examples.</b><br><br>
+
+<b>In C++, data types are declarations for variables. This determines the type and size of data associated with variables. For example,</b><br>
+
+<li><b>int age = 13;</b></li>
+<b>Here, age is a variable of type int. Meaning, the variable can only store integers of either 2 or 4 bytes.</b><br>
+
+<h3>C++ Fundamental Data Types</h3>
+The table below shows the fundamental data types, their meaning, and their sizes (in bytes):<br>
+
+<li>Data Type    ::	Meaning	Size (in Bytes)<br>
+<li>int   =	Integer	2 or 4<br>
+<li>float         =	Floating-point	4<br>
+<li>double	    =     Double Floating-point	8<br>
+<li>char   =	  Character	1<br>
+<li>wchar_t      =	 Wide Character	2<br>
+<li>bool   =	  Boolean	1<br>
+<li>void	=    Empty	0</li><br>
+<b>Now, let us discuss these fundamental data types in more detail.</b><br>
+
+<h3>1. C++ int</h3>
+<li>The int keyword is used to indicate integers.<br>
+<li>Its size is usually 4 bytes. Meaning, it can store values from -2147483648 to 2147483647.<br>
+For example,<br>
+<li><b>int salary = 85000;</b><br>
+<h3>2. C++ float and double</h3>
+<li>float and double are used to store floating-point numbers (decimals and exponentials).<br>
+<li>The size of float is 4 bytes and the size of double is 8 bytes. Hence, double has two times the precision of float. To learn more, visit C++ float and double.<br>
+For example,
+<b><Li>float area = 64.74;</b><br>
+<b><li>double volume = 134.64534;</b><br>
+As mentioned above, these two data types are also used for exponentials. For example,<br>
+
+<li><b>double distance = 45E12    // 45E12 is equal to 45*10^12</b> 
+<h3>3. C++ char</h3>
+<li>Keyword char is used for characters.<br>
+<li>Its size is 1 byte.<br>
+<li>Characters in C++ are enclosed inside single quotes ' '.<br>
+For example,
+<li>char test = 'h';<br>
+<i>Note: In C++, an integer value is stored in a char variable rather than the character itself. To learn more, visit C++ characters.</i><br>
+
+<h3>4. C++ wchar_t</h3>
+<li>Wide character wchar_t is similar to the char data type, except its size is 2 bytes instead of 1.<br>
+<li>It is used to represent characters that require more memory to represent them than a single char.<br>
+For example,
+<li><b>wchar_t test = L'ם'  // storing Hebrew character;<br></b>
+
+<i>Notice the letter L before the quotation marks.<br></i><br>
+
+
+<i>Note: There are also two other fixed-size character types char16_t and char32_t introduced in C++11.</i><br>
+
+<h3>5. C++ bool</h3>
+<li>The bool data type has one of two possible values: true or false.<br>
+<li>Booleans are used in conditional statements and loops (which we will learn in later chapters).<br>
+For example,<br>
+<li><b>bool cond = false;</b><br>
+<h3>6. C++ void</h3>
+<li>The void keyword indicates an absence of data. It means "nothing" or "no value".<br>
+<li>We will use void when we learn about functions and pointers.<br>
+<i>Note: We cannot declare variables of the void type.</i><br>
+
+<h3>C++ Type Modifiers</h3>
+<b>We can further modify some of the fundamental data types by using type modifiers. There are 4 type modifiers in C++. They are:<br></b>
+
+<li><b>signed<br>
+<li>unsigned<br>
+<li>short<br>
+<li>long<br></b>
+<strong>We can modify the following data types with the above modifiers:</strong><br>
+
+<li><b>int<br>
+<li>double<br>
+<li>char</b><br>
+<h3>C++ Modified Data Types List</h3>
+<b>Data Type   ::	Size (in Bytes)	Meaning<br>
+<li>signed int    =	4	used for integers (equivalent to int)<br>
+<li>unsigned int     =	4	can only store positive integers<br>
+<li>short	2    =	used for small integers (range -32768 to 32767)<br>
+<li>unsigned short    =	2	used for small positive integers (range 0 to 65,535)<br>
+<li>long   =	at least 4	used for large integers (equivalent to long int)<br>
+<li>unsigned long  =	4	used for large positive integers or 0 (equivalent to unsigned long int)<br>
+<li>long long	8    =	used for very large integers (equivalent to long long int).<br>
+<li>unsigned long long  =	8	used for very large positive integers or 0 (equivalent to unsigned long long int)<br>
+<li>long double    =	12	used for large floating-point numbers<br>
+<li>signed char    =	1	used for characters (guaranteed range -127 to 127)<br>
+<li>unsigned char      =	1	used for characters (range 0 to 255)</b><br>
+<h3>Let's see a few examples.</h3>
+
+<li>long b = 4523232;<br>
+<li>long int c = 2345342;<br>
+<li>long double d = 233434.56343;<br>
+<li>short d = 3434233; // Error! out of range<br>
+<li>unsigned int a = -5;    // Error! can only store positive numbers or 0<br>
+<h3>Derived Data Types</h3>
+Data types that are derived from fundamental data types are derived types. For example: arrays, pointers, function types, structures, etc.<br>
+
+We will learn about these derived data types in later tutorials.

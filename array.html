@@ -1,0 +1,86 @@
+<h3>C++ Arrays</h3>
+In this tutorial, we will learn to work with arrays. We will learn to declare, initialize, and access array elements in C++ programming with the help of examples.<br>
+
+In C++, an array is a variable that can store multiple values of the same type. For example,<br>
+
+Suppose a class has 27 students, and we need to store the grades of all of them. Instead of creating 27 separate variables, we can simply create an array:<br>
+
+<li>double grade[27];<br>
+Here, grade is an array that can hold a maximum of 27 elements of double type.<br>
+
+In C++, the size and type of arrays cannot be changed after its declaration.<br>
+
+<b>C++ Array Declaration<br>
+dataType arrayName[arraySize];<br></b>
+For example,<br>
+
+<li>int x[6];<br>
+Here,<br>
+
+<li>int - type of element to be stored<br>
+<li>x - name of the array<br>
+<li>6 - size of the array<br>
+<h3>Access Elements in C++ Array</h3>
+In C++, each element in an array is associated with a number. The number is known as an array index. We can access elements of an array by using those indices.<br>
+<b>// syntax to access array elements<br>
+array[index];<br></b>
+Consider the array x we have seen above.<br>
+<img src ="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-declaration.png"width="500"><br>
+<b>Few Things to Remember:</b><br>
+<li>The array indices start with 0. Meaning x[0] is the first element stored at index 0.<br>
+<li>If the size of an array is n, the last element is stored at index (n-1). In this example, x[5] is the last element.<br>
+<li>Elements of an array have consecutive addresses. For example, suppose the starting address of x[0] is 2120d. Then, the address of the next element x[1] will be 2124d, the address of x[2] will be 2128d and so on.<br>
+
+<b>Here, the size of each element is increased by 4. This is because the size of int is 4 bytes.</b><br>
+<h3>C++ Array Initialization</h3>
+In C++, it's possible to initialize an array during declaration. For example,<br>
+
+<b>// declare and initialize and array<br>
+int x[6] = {19, 10, 8, 17, 9, 15};</b><br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-initialization.png"width="500">
+C++ Array elements and their data<br>
+Another method to initialize array during declaration:<br>
+
+<b>// declare and initialize an array<br>
+int x[] = {19, 10, 8, 17, 9, 15};<br></b>
+Here, we have not mentioned the size of the array. In such cases, the compiler automatically computes the size.<br>
+<h3>C++ Array With Empty Members</h3>
+In C++, if an array has a size n, we can store upto n number of elements in the array. However, what will happen if we store less than n number of elements.<br>
+
+For example,<br>
+
+<b>// store only 3 elements in the array<br>
+int x[6] = {19, 10, 8};<br></b>
+Here, the array x has a size of 6. However, we have initialized it with only 3 elements.<br>
+
+In such cases, the compiler assigns random values to the remaining places. Oftentimes, this random value is simply 0.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-empty-members.png"width="500">
+Empty array members are automatically assigned the value 0<br>
+<u>How to insert and print array elements?</u><br>
+<b>int mark[5] = {19, 10, 8, 17, 9}<br>
+
+// change 4th element to 9<br>
+mark[3] = 9;<br>
+
+// take input from the user<br>
+// store the value at third position<br>
+cin >> mark[2];<br>
+
+
+// take input from the user<br>
+// insert at ith position<br>
+cin >> mark[i-1];<br>
+
+// print first element of the array<br>
+cout << mark[0];<br>
+
+// print ith element of the array<br>
+cout >> mark[i-1];<br></b>
+<h3>C++ Array Out of Bounds</h3>
+If we declare an array of size 10, then the array will contain elements from index 0 to 9.<br>
+
+However, if we try to access the element at index 10 or more than 10, it will result in Undefined Behaviour.
+
+
+
+

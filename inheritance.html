@@ -1,0 +1,61 @@
+<h3>C++ Inheritance</h3>
+In this tutorial, we will learn about inheritance in C++ with the help of examples.<br>
+
+Inheritance is one of the key features of Object-oriented programming in C++. It allows us to create a new class (derived class) from an existing class (base class).<br>
+
+The derived class inherits the features from the base class and can have additional features of its own. For example,<br>
+
+<b>class Animal {<br>
+    // eat() function<br>
+    // sleep() function<br>
+};<br>
+
+class Dog : public Animal {<br>
+    // bark() function<br>
+};<br></b>
+Here, the Dog class is derived from the Animal class. Since Dog is derived from Animal, members of Animal are accessible to Dog.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-inheritance.png"width="500">
+Notice the use of the keyword public while inheriting Dog from Animal.<br>
+
+<b>class Dog : public Animal {...};<br></b>
+We can also use the keywords private and protected instead of public. We will learn about the differences between using private, public and protected later in this tutorial.<br>
+<h3>is-a relationship</h3>
+Inheritance is an is-a relationship. We use inheritance only if an is-a relationship is present between the two classes.<br>
+
+Here are some examples:<br>
+
+<li>A car is a vehicle.<br>
+<li>Orange is a fruit.<br>
+<li>A surgeon is a doctor.<br>
+<li>A dog is an animal.<br>
+<h3>C++ protected Members</h3>
+The access modifier protected is especially relevant when it comes to C++ inheritance.<br>
+
+Like private members, protected members are inaccessible outside of the class. However, they can be accessed by derived classes and friend classes/functions.<br>
+
+We need protected members if we want to hide the data of a class, but still want that data to be inherited by its derived classes.<br>
+To learn more about protected, refer to our C++ Access Modifiers tutorial.<br>
+<h3>Access Modes in C++ Inheritance</h3>
+In our previous tutorials, we have learned about C++ access specifiers such as public, private, and protected.<br>
+
+So far, we have used the public keyword in order to inherit a class from a previously-existing base class. However, we can also use the private and protected keywords to inherit classes. <br>
+For example,<br>
+
+<b>class Animal {<br>
+    // code<br>
+};<br>
+
+class Dog : private Animal {<br>
+    // code<br>
+};<br>
+class Cat : protected Animal {<br>
+    // code<br>
+};<br></b>
+The various ways we can derive classes are known as access modes. These access modes have the following effect:<br>
+
+<li>public: If a derived class is declared in public mode, then the members of the base class are inherited by the derived class just as they are.<br>
+<li>private: In this case, all the members of the base class become private members in the derived class.<br>
+<li>protected: The public members of the base class become protected members in the derived class.<br>
+The private members of the base class are always private in the derived class.<br>
+
+To learn more, visit our C++ public, private, protected inheritance tutorial.<br>

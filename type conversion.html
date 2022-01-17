@@ -1,0 +1,158 @@
+<h3>C++ Type Conversion</h3>
+In this tutorial, we will learn about the basics of C++ type conversion with the help of examples.<br>
+
+<b>C++ allows us to convert data of one type to that of another. This is known as type conversion.<br>
+
+There are two types of type conversion in C++.</b><br>
+
+<u>Implicit Conversion<br>
+Explicit Conversion (also known as Type Casting)</u><br>
+<h3>mplicit Type Conversion</h3>
+The type conversion that is done automatically done by the compiler is known as implicit type conversion. This type of conversion is also known as automatic conversion.<br>
+
+<b>Let us look at two examples of implicit type conversion.</b><br>
+
+<li>Example 1: Conversion From int to double<br>
+<b>// Working of implicit type-conversion<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+   // assigning an int value to num_int<br>
+   int num_int = 9;<br>
+
+   // declaring a double type variable<br>
+   double num_double;<br>
+ 
+   // implicit conversion<br>
+   // assigning int value to a double variable<br>
+   num_double = num_int;<br>
+
+   cout << "num_int = " << num_int << endl;<br>
+   cout << "num_double = " << num_double << endl;<br>
+
+   return 0;<br>
+}<br>
+Output<br>
+
+num_int = 9<br>
+num_double = 9<br></b>
+<li>In the program, we have assigned an int data to a double variable.<br>
+
+<u>num_double = num_int;<br></u>
+Here, the int value is automatically converted to double by the compiler before it is assigned to the num_double variable. This is an example of implicit type conversion.<br>
+
+<li>Example 2: Automatic Conversion from double to int<br>
+<b>//Working of Implicit type-conversion<br>
+
+#include <iostream><br>
+using namespace std;<br>
+
+int main() {<br>
+
+   int num_int;<br>
+   double num_double = 9.99;<br>
+
+   // implicit conversion<br>
+   // assigning a double value to an int variable<br>
+   num_int = num_double;<br>
+
+   cout << "num_int = " << num_int << endl;<br>
+   cout << "num_double = " << num_double << endl;<br>
+
+   return 0;<br>
+}<br>
+Output<br>
+
+num_int = 9<br>
+num_double = 9.99<br></b>
+<li>In the program, we have assigned a double data to an int variable.<br>
+
+<u>num_double = num_int;<br></u>
+Here, the double value is automatically converted to int by the compiler before it is assigned to the num_int variable. This is also an example of implicit type conversion.<br>
+
+<i>Note: Since int cannot have a decimal part, the digits after the decimal point are truncated in the above example.<br></i>
+
+<h3>Data Loss During Conversion (Narrowing Conversion)</h3>
+As we have seen from the above example, conversion from one data type to another is prone to data loss. This happens when data of a larger type is converted to data of a smaller type.<br>
+
+Data loss in C++ if a larger type of data is converted to a smaller type.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-type-conversion.png"width=300"><br>
+Possible Data Loss During Type Conversion<br>
+<h3>C++ Explicit Conversion</h3>
+When the user manually changes data from one type to another, this is known as explicit conversion. This type of conversion is also known as type casting.<br>
+
+<b>There are three major ways in which we can use explicit conversion in C++. They are:</b><br>
+
+<li>C-style type casting (also known as cast notation)<br>
+<li>Function notation (also known as old C++ style type casting)<br>
+<li>Type conversion operators<br>
+<h3>C-style Type Casting</h3>
+
+As the name suggests, this type of casting is favored by the C programming language. It is also known as cast notation.<br>
+
+The syntax for this style is:<br>
+
+(data_type)expression;<br>
+For example,<br>
+
+<b>// initializing int variable<br>
+int num_int = 26;<br>
+
+// declaring double variable<br>
+double num_double;<br>
+
+// converting from int to double<br><br>
+num_double = (double)num_int;<br></b>
+<h3>Function-style Casting</h3>
+We can also use the function like notation to cast data from one type to another.<br>
+
+The syntax for this style is:<br>
+
+data_type(expression);<br>
+For example,<br>
+
+<b>// initializing int variable<br>
+int num_int = 26;<br>
+
+// declaring double variable<br>
+double num_double;<br>
+
+// converting from int to double<br>
+num_double = double(num_int);<br></b>
+<h3>Example 3: Type Casting</h3>
+<b>#include <iostream><br>
+
+using namespace std;<br>
+
+int main() {<br>
+    // initializing a double variable<br>
+    double num_double = 3.56;<br>
+    cout << "num_double = " << num_double << endl;<br>
+
+    // C-style conversion from double to int<br>
+    int num_int1 = (int)num_double;<br>
+    cout << "num_int1   = " << num_int1 << endl;<br>
+
+    // function-style conversion from double to int<br>
+    int num_int2 = int(num_double);<br>
+    cout << "num_int2   = " << num_int2 << endl;<br>
+
+    return 0;<br>
+}<br>
+Output<br>
+
+<li>num_double = 3.56<br>
+<li>num_int1   = 3<br>
+<li>num_int2   = 3<br></b>
+We used both the <u>C style type conversion </u>and <u>the function-style casting </u>for type conversion and displayed the results. Since they perform the same task, both give us the same output.<br>
+
+<h3>Type Conversion Operators</h3>
+<b>Besides these two type castings, C++ also has four operators for type conversion. They are known as type conversion operators. They are:<br>
+
+<li>static_cast<br>
+<li>dynamic_cast<br>
+<li>const_cast<br>
+<li>reinterpret_cast<br></b>
+We will learn about these casts in later tutorials.

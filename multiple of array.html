@@ -1,0 +1,54 @@
+<h3>C++ Multidimensional Arrays</h3>
+In this tutorial, we'll learn about multi-dimensional arrays in C++. More specifically, how to declare them, access them, and use them efficiently in our program.<br>
+
+In C++, we can create an array of an array, known as a multidimensional array. For example:<br>
+
+<b>int x[3][4];<br></b>
+Here, x is a two-dimensional array. It can hold a maximum of 12 elements.<br>
+We can think of this array as a table with 3 rows and each row has 4 columns as shown below.<br>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-two-dimensional-array.png"width="500">
+Elements in two-dimensional array in C++ Programming<br>
+<b>Three-dimensional arrays also work in a similar way. For example:<br>
+
+float x[2][4][3];<br>
+This array x can hold a maximum of 24 elements.<br>
+
+We can find out the total number of elements in the array simply by multiplying its dimensions:<br>
+
+2 x 4 x 3 = 24<br></b>
+<h3>Multidimensional Array Initialization</h3>
+Like a normal array, we can initialize a multidimensional array in more than one way.<br>
+
+<b>1. Initialization of two-dimensional array<br>
+int test[2][3] = {2, 4, 5, 9, 0, 19};<br></b>
+The above method is not preferred. A better way to initialize this array with the same array elements is given below:<br>
+
+<b>int  test[2][3] = { {2, 4, 5}, {9, 0, 19}};<br>
+This array has 2 rows and 3 columns, which is why we have two rows of elements with 3 elements each.<br></b>
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-two-dimensional-array-initialization.png"width="500">
+Initializing a two-dimensional array in C++<br>
+<h3>2. Initialization of three-dimensional array</h3>
+<b>int test[2][3][4] = {3, 4, 2, 3, 0, -3, 9, 11, 23, 12, 23, <br>
+                 2, 13, 4, 56, 3, 5, 9, 3, 5, 5, 1, 4, 9};<br></b>
+This is not a good way of initializing a three-dimensional array. A better way to initialize this array is:<br>
+
+<b>int test[2][3][4] = { <br>
+                     { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} },<br>
+                     { {13, 4, 56, 3}, {5, 9, 3, 5}, {5, 1, 4, 9} }<br>
+                 };<br></b>
+Notice the dimensions of this three-dimensional array.<br>
+
+The first dimension has the value 2. So, the two elements comprising the first dimension are:<br>
+
+<li>Element 1 = { {3, 4, 2, 3}, {0, -3, 9, 11}, {23, 12, 23, 2} }<br>
+<li>Element 2 = { {13, 4, 56, 3}, {5, 9, 3, 5}, {5, 1, 4, 9} }<br>
+The second dimension has the value 3. Notice that each of the elements of the first dimension has three elements each:<br>
+
+<li>{3, 4, 2, 3}, {0, -3, 9, 11} and {23, 12, 23, 2} for Element 1.<br>
+<li>{13, 4, 56, 3}, {5, 9, 3, 5} and {5, 1, 4, 9} for Element 2.<br>
+Finally, there are four int numbers inside each of the elements of the second dimension:<br>
+
+<b>{3, 4, 2, 3}<br>
+{0, -3, 9, 11}<br>
+... .. ...<br>
+... .. ...<br></b>
